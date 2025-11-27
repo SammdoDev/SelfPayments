@@ -1,0 +1,41 @@
+/* ✅ Custom dark mode untuk ConfirmDialog */
+.confirm-dark .p-dialog {
+  background-color: #1f2937 !important;
+  color: #f9fafb !important;
+  border: 1px solid #374151 !important;
+}
+
+.confirm-dark .p-dialog-header {
+  background-color: #111827 !important;
+  color: #f9fafb !important;
+  border-bottom: 1px solid #374151 !important;
+}
+
+.confirm-dark .p-dialog-footer {
+  background-color: #111827 !important;
+  border-top: 1px solid #374151 !important;
+}
+
+.confirm-dark .p-dialog-content {
+  background-color: #1f2937 !important;
+  color: #e5e7eb !important;
+}
+
+.confirm-dark .p-button {
+  color: #e5e7eb !important;
+  background-color: #374151 !important;
+  border: none !important;
+}
+
+.confirm-dark .p-button:hover {
+  background-color: #4b5563 !important;
+}
+
+.confirm-dark .p-button-danger {
+  background-color: #dc2626 !important;
+  color: #fff !important;
+}
+
+.confirm-dark .p-button-danger:hover {
+  background-color: #b91c1c !important;
+}

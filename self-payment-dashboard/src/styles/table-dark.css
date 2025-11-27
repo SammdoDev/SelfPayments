@@ -1,0 +1,89 @@
+.custom-table-container {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+  transition: all 0.3s ease;
+  border: 1px solid;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.custom-table-container .table-inner {
+  padding: 1rem;
+}
+
+.custom-table-container.light-mode {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-color: #e5e7eb;
+  color: #111827;
+}
+
+.custom-table-container.dark-mode {
+  background-color: rgba(17, 24, 39, 0.7);
+  border-color: #374151;
+  color: #f3f4f6;
+}
+
+.custom-table .p-datatable-thead > tr > th {
+  background: linear-gradient(180deg, #f9fafb 0%, #f3f4f6 100%) !important;
+  color: #1f2937 !important;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e7eb !important;
+  text-align: left;
+  padding: 0.75rem 1rem !important;
+  transition: background 0.2s ease;
+}
+
+.dark-mode .custom-table .p-datatable-thead > tr > th {
+  background: linear-gradient(180deg, #111827 0%, #1f2937 100%) !important;
+  color: #f3f4f6 !important;
+  border-bottom: 1px solid #374151 !important;
+}
+
+.custom-table .p-datatable-tbody > tr {
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.custom-table .p-datatable-tbody > tr:nth-child(even) {
+  background-color: #fafafa !important;
+}
+
+.custom-table .p-datatable-tbody > tr:nth-child(odd) {
+  background-color: #ffffff !important;
+}
+
+.dark-mode .custom-table .p-datatable-tbody > tr:nth-child(even) {
+  background-color: #111827 !important;
+}
+
+.dark-mode .custom-table .p-datatable-tbody > tr:nth-child(odd) {
+  background-color: #1f2937 !important;
+}
+
+.custom-table .p-datatable-tbody > tr:hover {
+  background-color: #f0f4ff !important;
+  cursor: pointer;
+}
+
+.dark-mode .custom-table .p-datatable-tbody > tr:hover {
+  background-color: #374151 !important;
+}
+
+/* ====== CELLS ====== */
+.custom-table .p-datatable-tbody > tr > td,
+.custom-table .p-datatable-thead > tr > th {
+  border-color: #e5e7eb !important;
+  padding: 0.75rem 1rem !important;
+  font-size: 0.925rem;
+}
+
+.dark-mode .custom-table .p-datatable-tbody > tr > td,
+.dark-mode .custom-table .p-datatable-thead > tr > th {
+  border-color: #1f2937 !important;
+  color: #e5e7eb !important;
+}
+
+/* ====== WRAPPER ====== */
+.custom-table .p-datatable-wrapper {
+  background-color: transparent !important;
+}

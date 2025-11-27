@@ -1,0 +1,82 @@
+.custom-button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  padding: 0.6rem 1.25rem;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+  letter-spacing: 0.02rem;
+  text-align: center;
+}
+
+.p-button-sm.custom-button {
+  padding: 0.45rem 1rem;
+  font-size: 0.85rem;
+}
+
+.p-button.custom-button {
+  font-size: 0.9rem;
+}
+
+.p-button-lg.custom-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+.custom-button.p-button-secondary {
+  background-color: #f9fafb;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+}
+
+.custom-button.p-button-secondary:hover:not(:disabled) {
+  background-color: #e5e7eb;
+  transform: translateY(-1px);
+}
+
+.custom-button.p-button-success {
+  background-color: #10b981;
+  color: white;
+}
+
+.custom-button.p-button-success:hover:not(:disabled) {
+  background-color: #059669;
+  transform: translateY(-1px);
+}
+
+.custom-button.p-button-danger {
+  background-color: #ef4444;
+  color: white;
+}
+
+.custom-button.p-button-danger:hover:not(:disabled) {
+  background-color: #dc2626;
+  transform: translateY(-1px);
+}
+
+.custom-button:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.custom-button:disabled,
+.custom-button.p-disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media (max-width: 768px) {
+  .custom-button {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+.custom-button .p-button-icon {
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}

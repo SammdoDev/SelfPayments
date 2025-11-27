@@ -1,0 +1,46 @@
+.p-calendar-light input {
+  background-color: #ffffff;
+  color: #111827;
+  border: 1px solid #d1d5db;
+  padding: 0.5rem 0.75rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.p-calendar-light input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+}
+
+.p-calendar-panel-light {
+  background-color: #ffffff;
+  color: #111827;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.p-calendar-dark input {
+  background-color: #1f2937;
+  color: #f9fafb;
+  border: 1px solid #374151;
+  padding: 0.5rem 0.75rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.p-calendar-dark input:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.25);
+}
+
+.p-calendar-panel-dark {
+  background-color: #111827;
+  color: #f9fafb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.p-datepicker td > span.p-highlight {
+  background: #2563eb !important;
+  color: #fff !important;
+}
+
+.p-datepicker td > span:hover {
+  background: rgba(59, 130, 246, 0.15);
+}
