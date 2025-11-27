@@ -1,6 +1,6 @@
 # Self Payment Website 💳
 
-Website sistem pembayaran mandiri dengan halaman client untuk melakukan transaksi dan dashboard admin untuk mengelola data pembayaran. Dibangun menggunakan Next.js dan Supabase.
+Website sistem pembayaran mandiri dengan fitur scan QR code untuk melihat menu dan melakukan pemesanan. Dilengkapi dengan dashboard admin untuk mengelola menu dan transaksi. Dibangun menggunakan Next.js dan Supabase.
 
 ## 📱 Screenshots
 
@@ -9,26 +9,26 @@ Website sistem pembayaran mandiri dengan halaman client untuk melakukan transaks
 <table>
   <tr>
     <td width="50%">
-      <h4>1. Landing Page</h4>
+      <h4>1. Hero Section</h4>
       <img src="/assets/1.png" width="100%">
-      <p>Halaman utama website self payment dengan tampilan modern dan user-friendly</p>
+      <p>Halaman utama dengan hero section yang menarik, menampilkan tagline dan call-to-action untuk scan QR code</p>
     </td>
     <td width="50%">
-      <h4>2. Payment Form</h4>
+      <h4>2. How It Works</h4>
       <img src="/assets/2.png" width="100%">
-      <p>Form pembayaran untuk client melakukan transaksi dengan input data yang lengkap</p>
+      <p>Penjelasan cara menggunakan sistem self payment dengan langkah-langkah yang mudah dipahami</p>
     </td>
   </tr>
   <tr>
     <td width="50%">
-      <h4>3. Payment Details</h4>
+      <h4>3. Menu List</h4>
       <img src="/assets/3.png" width="100%">
-      <p>Halaman detail pembayaran menampilkan informasi transaksi secara lengkap</p>
+      <p>Daftar menu yang tersedia dengan gambar, deskripsi, dan harga. Customer dapat memilih dan menambahkan ke keranjang</p>
     </td>
     <td width="50%">
-      <h4>4. Confirmation Page</h4>
+      <h4>4. Scan QR Table</h4>
       <img src="/assets/4.png" width="100%">
-      <p>Halaman konfirmasi setelah pembayaran berhasil diproses</p>
+      <p>Fitur scan QR code untuk menentukan nomor meja dan memulai pemesanan</p>
     </td>
   </tr>
 </table>
@@ -40,21 +40,21 @@ Website sistem pembayaran mandiri dengan halaman client untuk melakukan transaks
 <table>
   <tr>
     <td width="50%">
-      <h4>5. Dashboard Overview</h4>
+      <h4>5. Dashboard Summary</h4>
       <img src="/assets/5.png" width="100%">
-      <p>Dashboard utama admin untuk melihat ringkasan data pembayaran dan statistik</p>
+      <p>Ringkasan data penjualan, total transaksi, revenue, dan statistik penting lainnya</p>
     </td>
     <td width="50%">
-      <h4>6. Transaction Management</h4>
+      <h4>6. Order List</h4>
       <img src="/assets/6.png" width="100%">
-      <p>Halaman manajemen transaksi untuk mengelola dan memantau semua pembayaran</p>
+      <p>Daftar semua pesanan yang masuk dengan status, nomor meja, dan detail pemesanan</p>
     </td>
   </tr>
   <tr>
     <td colspan="2">
-      <h4>7. Data Analytics</h4>
+      <h4>7. Menu Management</h4>
       <img src="/assets/7.png" width="100%">
-      <p>Halaman analitik data dengan visualisasi dan laporan pembayaran</p>
+      <p>Halaman untuk mengelola menu - tambah, edit, hapus item menu dengan gambar dan harga</p>
     </td>
   </tr>
 </table>
@@ -68,21 +68,27 @@ Website sistem pembayaran mandiri dengan halaman client untuk melakukan transaks
     <td width="50%" valign="top">
       <h3>👤 Client Side</h3>
       <ul>
-        <li>✅ <b>Landing Page</b> - Tampilan menarik dan informasi jelas</li>
-        <li>✅ <b>Payment Form</b> - Form pembayaran yang mudah digunakan</li>
-        <li>✅ <b>Payment Details</b> - Informasi detail transaksi</li>
-        <li>✅ <b>Confirmation</b> - Konfirmasi pembayaran berhasil</li>
-        <li>✅ <b>Responsive Design</b> - Tampilan optimal di semua device</li>
+        <li>✅ <b>Hero Section</b> - Landing page yang menarik</li>
+        <li>✅ <b>How It Works</b> - Panduan penggunaan sistem</li>
+        <li>✅ <b>Scan QR Code</b> - Scan untuk pilih nomor meja</li>
+        <li>✅ <b>Menu List</b> - Browse menu dengan gambar & harga</li>
+        <li>✅ <b>Add to Cart</b> - Tambahkan menu ke keranjang</li>
+        <li>✅ <b>Order Confirmation</b> - Konfirmasi pesanan sebelum submit</li>
+        <li>✅ <b>Payment Status</b> - Tracking status pembayaran</li>
+        <li>✅ <b>Responsive Design</b> - Optimal di semua device</li>
       </ul>
     </td>
     <td width="50%" valign="top">
       <h3>🔧 Dashboard Admin</h3>
       <ul>
-        <li>✅ <b>Overview Dashboard</b> - Ringkasan dan statistik pembayaran</li>
-        <li>✅ <b>Transaction Management</b> - Kelola semua transaksi</li>
-        <li>✅ <b>Data Analytics</b> - Visualisasi data dan laporan</li>
-        <li>✅ <b>Real-time Updates</b> - Data terupdate secara real-time</li>
-        <li>✅ <b>Export Data</b> - Export laporan dalam berbagai format</li>
+        <li>✅ <b>Dashboard Summary</b> - Overview revenue & statistik</li>
+        <li>✅ <b>Order Management</b> - Kelola pesanan masuk</li>
+        <li>✅ <b>Menu Management</b> - CRUD menu items</li>
+        <li>✅ <b>Table Management</b> - Kelola QR code meja</li>
+        <li>✅ <b>Real-time Orders</b> - Notifikasi pesanan baru</li>
+        <li>✅ <b>Sales Report</b> - Laporan penjualan</li>
+        <li>✅ <b>Export Data</b> - Export ke Excel/PDF</li>
+        <li>✅ <b>User Management</b> - Kelola admin & staff</li>
       </ul>
     </td>
   </tr>
@@ -126,23 +132,51 @@ Website sistem pembayaran mandiri dengan halaman client untuk melakukan transaks
     <td width="50%" valign="top">
       <h3>Client Features</h3>
       <ul>
-        <li>✅ Responsive payment form</li>
-        <li>✅ Real-time form validation</li>
-        <li>✅ Payment status tracking</li>
-        <li>✅ Transaction history</li>
-        <li>✅ Email notifications</li>
+        <li>✅ QR Code Scanner untuk meja</li>
+        <li>✅ Browse menu dengan filter kategori</li>
+        <li>✅ Shopping cart system</li>
+        <li>✅ Real-time order status</li>
+        <li>✅ Payment integration</li>
+        <li>✅ Order history</li>
+        <li>✅ Rating & review menu</li>
       </ul>
     </td>
     <td width="50%" valign="top">
       <h3>Dashboard Features</h3>
       <ul>
-        <li>✅ Admin authentication</li>
-        <li>✅ Transaction overview</li>
-        <li>✅ Search & filter transactions</li>
-        <li>✅ Data visualization (charts)</li>
-        <li>✅ Export to CSV/PDF</li>
-        <li>✅ User management</li>
+        <li>✅ Real-time order notifications</li>
+        <li>✅ Sales analytics & charts</li>
+        <li>✅ Menu CRUD operations</li>
+        <li>✅ Order status management</li>
+        <li>✅ Table QR code generator</li>
+        <li>✅ Export reports (CSV/PDF)</li>
+        <li>✅ Multi-user access control</li>
       </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+## 💳 Payment Flow
+
+<table>
+  <tr>
+    <td align="center" width="25%">
+      <h4>1️⃣ Scan QR</h4>
+      <p>Customer scan QR code di meja</p>
+    </td>
+    <td align="center" width="25%">
+      <h4>2️⃣ Browse Menu</h4>
+      <p>Pilih menu & tambah ke cart</p>
+    </td>
+    <td align="center" width="25%">
+      <h4>3️⃣ Order</h4>
+      <p>Konfirmasi & submit order</p>
+    </td>
+    <td align="center" width="25%">
+      <h4>4️⃣ Payment</h4>
+      <p>Bayar & terima konfirmasi</p>
     </td>
   </tr>
 </table>
@@ -153,14 +187,14 @@ Website sistem pembayaran mandiri dengan halaman client untuk melakukan transaks
 
 <table>
   <tr>
-    <td align="center">✅ Supabase Auth</td>
+    <td align="center">✅ Authentication</td>
     <td align="center">✅ PostgreSQL Database</td>
     <td align="center">✅ Row Level Security</td>
   </tr>
   <tr>
     <td align="center">✅ Real-time Subscriptions</td>
     <td align="center">✅ Auto REST API</td>
-    <td align="center">✅ File Storage</td>
+    <td align="center">✅ Storage (Menu Images)</td>
   </tr>
 </table>
 
@@ -174,20 +208,22 @@ Website sistem pembayaran mandiri dengan halaman client untuk melakukan transaks
       <h3>🔐 Security</h3>
       <ul>
         <li>Row Level Security (RLS)</li>
-        <li>Protected API routes</li>
-        <li>Role-based access control</li>
-        <li>Input validation & sanitization</li>
-        <li>Secure payment processing</li>
+        <li>Protected admin routes</li>
+        <li>JWT authentication</li>
+        <li>Input sanitization</li>
+        <li>Secure payment gateway</li>
+        <li>QR code encryption</li>
       </ul>
     </td>
     <td width="50%" valign="top">
       <h3>⚡ Performance</h3>
       <ul>
-        <li>Server-side rendering (SSR)</li>
-        <li>Static generation</li>
+        <li>Server-side rendering</li>
         <li>Image optimization</li>
         <li>Database indexing</li>
-        <li>Smart caching strategy</li>
+        <li>Edge caching</li>
+        <li>Lazy loading menu items</li>
+        <li>Real-time updates</li>
       </ul>
     </td>
   </tr>
@@ -198,4 +234,5 @@ Website sistem pembayaran mandiri dengan halaman client untuk melakukan transaks
 <div align="center">
   <h3>👨‍💻 Developer</h3>
   <p>Dibuat dengan ❤️ menggunakan <b>Next.js</b> dan <b>Supabase</b></p>
+  <p><i>Self Payment System for Modern Restaurants</i></p>
 </div>
